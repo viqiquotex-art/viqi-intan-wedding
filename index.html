@@ -214,7 +214,91 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:40;opa
 .wish{animation:wishArrive .65s cubic-bezier(.16,1,.3,1) both}
 @keyframes wishArrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:390px){.count-item{min-width:58px;padding:14px 4px}.count-item span{letter-spacing:.08em}}
-</style></head><body><div id="scrollProgress" aria-hidden="true"></div><div id="petalLayer" aria-hidden="true"></div><div id="pageTransition" aria-hidden="true"><div class="transition-monogram">V <i>&</i> I</div></div>
+</style>
+<style id="vixora-visual-refinement-2026">
+/* Refined editorial layout — visual-only pass */
+:root{--bridal-cream:#fffaf2;--bridal-blush:#ead8c7;--bridal-olive:#788263;--bridal-gold:#c6a978}
+body{background:var(--bridal-cream)}
+::selection{background:#d8c6a4;color:#343329}
+.wrap{width:min(1080px,100% - 42px)}
+.section{padding:clamp(68px,9vw,112px) 0}
+.section-title{margin:15px 0 20px}
+.section-intro{max-width:560px}
+.intro{background:linear-gradient(180deg,#fffdf8 0%,#fffaf2 100%);overflow:hidden}
+.intro .wrap{position:relative}
+.intro .wrap:before,.intro .wrap:after{content:"✳";position:absolute;top:48%;color:#c4ad82;font-size:1.4rem;opacity:.55}
+.intro .wrap:before{left:0;transform:translate(-5px,-50%)}
+.intro .wrap:after{right:0;transform:translate(5px,-50%)}
+.intro .section-intro[style]{max-width:680px;margin:0 auto 20px}
+#home .hero-image{background-position:center 44%}
+#home .hero-inner{max-width:1000px;margin:auto;padding:110px 22px}
+#home .hero .eyebrow{font-size:.7rem;letter-spacing:.28em}
+#home .hero h1{font-size:clamp(4.2rem,13vw,9rem);letter-spacing:-.065em;margin:30px 0 32px}
+#home .hero h1 span{font-size:.55em;margin:12px 0;color:#e6d3b0}
+#home .hero-date{display:inline-flex;align-items:center;gap:15px;font-size:.67rem;letter-spacing:.24em}
+#home .hero-date:before,#home .hero-date:after{content:"";height:1px;width:28px;background:#e8d9bd99}
+#home .scroll-note{display:table;margin:64px auto 0;padding:12px 18px;border:1px solid #fff6;border-radius:99px;background:#fff1;backdrop-filter:blur(8px);animation:scrollNudge 2.6s ease-in-out infinite}
+.couple-grid{gap:clamp(12px,4vw,42px);max-width:850px;margin:50px auto 0}
+.person{padding:10px 8px 20px}
+.person-photo{width:min(100%,350px);border:7px solid #fffaf2;outline:1px solid #d7c5a5;outline-offset:4px;box-shadow:0 15px 40px #4b3e2a12}
+.person h3{line-height:1.2}
+.person p{max-width:270px;margin:0 auto;color:#827969}
+.story{background:linear-gradient(145deg,#f0e7dc,#e8dfd4 58%,#f3e9dc)}
+.story .section-intro{margin-bottom:42px}
+.story-card{max-width:690px;padding:28px 20px;border-top:1px solid #cbbda9}
+.story-card:last-child{border-bottom:1px solid #cbbda9}
+.story-year{font-size:1.12rem;letter-spacing:.03em}
+.story-card h3{font-size:1.55rem}
+.event-grid{gap:22px;max-width:900px;margin:48px auto 0}
+.event-card{padding:clamp(28px,5vw,46px) 24px;background:linear-gradient(155deg,#fffefa,#faf2e6);box-shadow:0 10px 30px #51483208}
+.event-card>div:first-child{width:44px;height:44px;display:grid;place-items:center;border:1px solid #d6c29b;border-radius:50%;color:#8a8c6b;margin:0 auto 14px}
+.event-card h3{margin:14px 0}
+.event-card p{margin:12px 0 20px}
+.pill-link{transition:background .25s,color .25s,transform .25s}
+.pill-link:hover{background:var(--bridal-olive);color:white;transform:translateY(-2px)}
+.gallery{overflow:hidden}
+.gallery-grid{gap:clamp(8px,2vw,18px);max-width:960px;margin:48px auto 0;align-items:start}
+.gallery-grid img{height:clamp(240px,38vw,410px);border-radius:160px 160px 4px 4px;box-shadow:0 12px 32px #4b3e2a0d}
+.gallery-grid img:nth-child(2){margin-top:35px}
+.rsvp{background:linear-gradient(140deg,#f0e7dc,#e9dfd3)}
+.rsvp-box{padding:clamp(22px,5vw,38px);box-shadow:0 18px 50px #5148320d}
+.field label{font-size:.72rem;letter-spacing:.04em;color:#6d685c}
+.field input,.field select,.field textarea{border-radius:2px;transition:border-color .25s,box-shadow .25s;background:#fffdf9}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:#8b9475;box-shadow:0 0 0 3px #8b94751c}
+.gift-card{background:linear-gradient(150deg,#fffdf8,#f9f0e3);padding:34px 28px}
+.closing{min-height:78svh;background-position:center 46%}
+.closing-content{max-width:680px;margin:auto}
+.closing h2{letter-spacing:-.04em;text-shadow:0 4px 28px #0002}
+.footer{padding:30px 18px 34px}
+.music-btn{right:clamp(12px,3vw,24px);bottom:clamp(12px,3vw,24px);padding:13px 17px;border-color:#c6a97888}
+#petalLayer{position:fixed;inset:0;z-index:22;pointer-events:none;overflow:hidden}
+@keyframes scrollNudge{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@media(max-width:650px){
+ .wrap{width:calc(100% - 32px)}
+ .section{padding:66px 0}
+ .intro .wrap:before{left:4px}.intro .wrap:after{right:4px}
+ .intro .section-intro[style]{font-size:1.08rem!important;padding:0 13px}
+ #home .hero-inner{padding:100px 18px 82px}
+ #home .hero h1{font-size:clamp(3.6rem,16vw,6.3rem);margin:26px 0}
+ #home .scroll-note{margin-top:48px;font-size:.6rem}
+ .couple-grid{margin-top:38px}
+ .person-photo{border-width:5px;outline-offset:3px}
+ .person h3{font-size:clamp(1.35rem,5vw,1.8rem);margin:18px 0 9px}
+ .person p{font-size:.78rem}
+ .story-card{padding:23px 6px}
+ .story-year{font-size:.95rem}
+ .story-card h3{font-size:1.3rem}
+ .event-grid{margin-top:34px}
+ .gallery-grid{margin-top:35px}
+ .gallery-grid img{height:clamp(220px,64vw,310px);border-radius:110px 110px 4px 4px}
+ .gallery-grid img:nth-child(2){margin-top:25px}
+ .closing{min-height:68svh}
+ .music-btn{font-size:.8rem;padding:11px 14px}
+}
+@media(max-width:370px){.person h3{font-size:1.22rem}.person p{font-size:.72rem}.hero-date{letter-spacing:.15em!important}}
+@media(prefers-reduced-motion:reduce){#home .scroll-note{animation:none}}
+</style>
+</head><body><div id="scrollProgress" aria-hidden="true"></div><div id="petalLayer" aria-hidden="true"></div><div id="pageTransition" aria-hidden="true"><div class="transition-monogram">V <i>&</i> I</div></div>
 <div class="cover" id="cover"><div class="cover-card"><div class="monogram">V & I</div><div class="cover-content"><div class="eyebrow">The Wedding Of</div><h1 class="cover-names">Viqi <span class="amp">&</span><br>Intan</h1><div class="cover-date">A NEW CHAPTER · TOGETHER</div></div><button class="open-btn" id="openInvite">✦ &nbsp; Buka Undangan</button><div class="cover-bottom">Kepada Yth. <span id="guestCover">Tamu Undangan</span><div class="brand-mini">An invitation by <strong>Vixora Invitation Studio</strong></div></div></div><div class="envelope-stage" id="envelopeStage" aria-hidden="true"><div class="envelope-paper"><span class="paper-kicker">A special invitation</span><span class="paper-monogram">V <i>&</i> I</span><span class="paper-names">Viqi <i>&</i> Intan</span><span class="paper-rule"></span><span class="paper-small">THE WEDDING CELEBRATION</span></div><div class="envelope-pocket"></div><div class="envelope-flap"></div><div class="envelope-seal">V <i>&</i> I</div><div class="envelope-glint"></div></div></div><button class="music-btn" id="musicBtn"><span class="music-dot"></span><span id="musicLabel">Putar musik</span> ♫</button><main><section class="hero" id="home"><div class="hero-image"></div><div class="hero-inner"><div class="eyebrow">Together is a beautiful place to be</div><h1>Viqi <span>&</span> Intan</h1><div class="hero-date">THE WEDDING CELEBRATION</div><div class="scroll-note">Scroll to feel the love ↓</div></div></section><section class="section intro"><div class="wrap reveal"><div class="eyebrow">A little note from us</div><h2 class="section-title">Dua hati, satu cerita.</h2><p class="section-intro" style="font:italic 1.25rem/1.8 'Playfair Display',serif">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram di sampingnya.”</p><p style="font-size:.75rem;color:var(--muted)">QS. Ar-Rum: 21</p><p class="section-intro">Dengan penuh rasa syukur dan bahagia, kami mengundang keluarga serta sahabat untuk menjadi bagian dari hari istimewa kami.</p></div></section><section class="section"><div class="wrap"><div class="eyebrow" style="text-align:center">The people behind this story</div><h2 class="section-title">Meet the couple</h2><div class="couple-grid"><article class="person reveal"><img class="person-photo" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85" alt="Foto contoh mempelai pria"><h3>Viqi Septiawantoro</h3><p>Putra dari<br><strong>Nama Ayah & Nama Ibu</strong></p></article><article class="person reveal"><img class="person-photo" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85" alt="Foto contoh mempelai wanita"><h3>Intan Maharani</h3><p>Putri dari<br><strong>Nama Ayah & Nama Ibu</strong></p></article></div></div></section><section class="section story"><div class="wrap"><div class="eyebrow" style="text-align:center">Our little universe</div><h2 class="section-title">The story so far.</h2><p class="section-intro">Template cerita ini bisa kita isi dengan momen asli kalian.</p><div class="story-card reveal"><div class="story-year">01 / Hello</div><div><h3>Where it started</h3><p>Berawal dari pertemuan sederhana, lalu tumbuh menjadi cerita yang ingin kami lanjutkan.</p></div></div><div class="story-card reveal"><div class="story-year">02 / Us</div><div><h3>Growing together</h3><p>Belajar memahami, saling menguatkan, dan memilih satu sama lain, lagi dan lagi.</p></div></div><div class="story-card reveal"><div class="story-year">03 / Forever</div><div><h3>Here comes forever</h3><p>Melangkah ke bab baru—semoga dipenuhi cinta, doa, dan keberkahan.</p></div></div></div></section><section class="section" id="event"><div class="wrap"><div class="eyebrow" style="text-align:center">Save the date</div><h2 class="section-title">A day to remember.</h2><p class="section-intro">Tanggal dan lokasi acara di bawah ini masih menunggu detail resmi.</p><div class="countdown" id="countdown"><div class="count-item"><strong>—</strong><span>Hari</span></div><div class="count-item"><strong>—</strong><span>Jam</span></div><div class="count-item"><strong>—</strong><span>Menit</span></div><div class="count-item"><strong>—</strong><span>Detik</span></div></div><p class="countdown-note">Tanggal pernikahan akan diumumkan segera ♡</p><div class="event-grid"><article class="event-card reveal"><div>✦</div><h3>Akad Nikah</h3><p><strong>Tanggal belum ditentukan</strong><br>08.00 WIB — selesai<br>Lokasi akan diumumkan</p><a class="pill-link" href="#rsvp">Konfirmasi kehadiran</a></article><article class="event-card reveal"><div>❋</div><h3>Resepsi</h3><p><strong>Tanggal belum ditentukan</strong><br>11.00 WIB — selesai<br>Lokasi akan diumumkan</p><a class="pill-link" href="#rsvp">Konfirmasi kehadiran</a></article></div></div></section><section class="section gallery"><div class="wrap"><div class="eyebrow" style="text-align:center">Frames of us</div><h2 class="section-title">Little moments, big love.</h2><p class="section-intro">Foto-foto ini hanya contoh dan dapat diganti dengan foto prewedding kalian.</p><div class="gallery-grid reveal"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=700&q=85" alt="Inspirasi foto pasangan" loading="lazy"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=85" alt="Inspirasi foto pernikahan" loading="lazy"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=700&q=85" alt="Inspirasi foto pasangan" loading="lazy"></div></div></section><section class="section rsvp" id="rsvp"><div class="wrap"><div class="eyebrow" style="text-align:center">Let us know</div><h2 class="section-title">Will you be there?</h2><p class="section-intro">Kehadiran dan doa baikmu adalah hadiah yang berarti bagi kami.</p><form class="rsvp-box reveal" id="rsvpForm"><div class="field"><label for="guestName">Nama lengkap</label><input id="guestName" required placeholder="Tulis nama kamu"></div><div class="field"><label for="attendance">Konfirmasi kehadiran</label><select id="attendance"><option>Dengan senang hati hadir</option><option>Maaf, belum bisa hadir</option></select></div><div class="field"><label for="wish">Doa & ucapan</label><textarea id="wish" placeholder="Tulis doa terbaikmu..."></textarea></div><button class="open-btn" type="submit">Simpan ucapan ♡</button><button class="rsvp-whatsapp" type="button" id="shareRSVP">♡ Kirim konfirmasi via WhatsApp</button><p class="rsvp-hint">Ucapan pada formulir disimpan di browser ini. Tombol WhatsApp menyiapkan pesan agar bisa dikirim ke keluarga/mempelai.</p></form><div class="wishes" id="wishes"></div></div></section><section class="section gift"><div class="wrap"><div class="eyebrow">A little kindness</div><h2 class="section-title">Sending love.</h2><p class="section-intro">Doa restu adalah hadiah terindah. Informasi hadiah dapat ditambahkan setelah disiapkan.</p><div class="gift-card reveal"><div style="font-size:1.8rem;color:var(--olive)">♡</div><h3>Wedding Gift</h3><p>Informasi rekening atau alamat hadiah<br><strong>Akan ditambahkan</strong></p><button class="copy-btn" id="copyGift" type="button">Lihat detail hadiah</button></div></div></section><section class="closing"><div class="closing-content"><div class="eyebrow" style="color:#e3d4c2">And so, our next chapter begins</div><h2>See you there.</h2><p>Terima kasih telah menjadi bagian dari cerita kami.<br>Dengan cinta,</p><div style="font:italic 2rem 'Playfair Display',serif">Viqi & Intan</div></div></section></main><footer class="footer">MADE WITH ♡ FOR VIQI & INTAN · WEDDING INVITATION<br><a class="provider-mark" href="https://vixora.my.id/creative#portfolio" target="_blank" rel="noopener"><span>✦</span><b>VIXORA</b><span>INVITATION STUDIO</span></a><div style="font-size:.62rem;opacity:.65;margin-top:5px">Crafting moments into memories.</div></footer><div class="toast" id="toast"></div><script>const $=s=>document.querySelector(s);
 const progressBar=document.getElementById('scrollProgress');function updateProgress(){const max=document.documentElement.scrollHeight-window.innerHeight;const pct=max>0?(window.scrollY/max)*100:0;progressBar.style.width=pct+'%'}window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();
 const params=new URLSearchParams(location.search);const guest=(params.get('to')||'').trim();if(guest){const n=guest.replace(/[+_]/g,' ').replace(/\b\w/g,c=>c.toUpperCase());$('#guestCover').textContent=n;$('#guestName').value=n}let ctx=null,timer=null,playing=false,idx=0,master=null,compressor=null;const weddingAudio=new Audio("./ssstik.io_1792237216439.mp3");weddingAudio.loop=true;weddingAudio.volume=1.0;
