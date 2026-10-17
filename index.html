@@ -775,6 +775,7 @@ section[id],.hero[id]{scroll-margin-top:92px}
 :root{--olive:#697653;--gold:#c9b17f;--paper:#fbf6ed;--line:#e5d9c8;--ink:#302e27}
 body{background:#fbf6ed}
 .vixora-nav{position:fixed;z-index:15;top:14px;left:50%;transform:translateX(-50%);width:min(920px,calc(100% - 28px));display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 13px 10px 16px;border:1px solid #fff9;background:#fbf7eef0;backdrop-filter:blur(18px);box-shadow:0 8px 32px #33291b12;border-radius:99px;opacity:0;pointer-events:none;transition:opacity .35s,transform .35s}
+body.invite-open .vixora-nav{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%)}
 .vixora-nav.is-visible{opacity:1;pointer-events:auto}
 .nav-monogram{font:italic 1.1rem 'Playfair Display',serif;color:var(--olive);text-decoration:none;white-space:nowrap}
 .nav-monogram i{color:var(--gold)}
